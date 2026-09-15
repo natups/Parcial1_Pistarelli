@@ -13,27 +13,31 @@ Esta plantilla prepara un repositorio publico e individual para proyectos academ
 
 ## Datos del proyecto
 
-- Estudiante: [PENDIENTE]
-- Materia, comision y anio: [PENDIENTE]
-- Nombre del proyecto: [PENDIENTE]
-- Motor y version: [PENDIENTE]
-- Estado: [PENDIENTE]
+- Estudiante: Pistarelli Natasha
+- Materia, comision y anio: Programación de Inteligencia Artificial y Patrones de Comportamiento, 3er anio.
+- Nombre del proyecto: Laberinto Recolector
+- Motor y version: Phaser v3.55.2 / Node.js
+- Estado: Finalizado (100% Tests pasados)
 
 ## Descripcion
 
-[Explica brevemente el juego o prototipo y su objetivo actual.]
+Juego de laberinto 2D en cuadrícula donde el jugador debe recolectar gemas y llegar a la salida antes de quedarse sin movimientos. Desarrollado con arquitectura desacoplada para pruebas unitarias con Jest e interfaz gráfica en Phaser 3.
 
 ## Requisitos y ejecucion
 
-[Indica el motor, herramientas, versiones y pasos necesarios para abrir o ejecutar el proyecto.]
+1. Clonar el repositorio.
+2. Ejecutar `npm install` para instalar dependencias.
+3. Para ejecutar pruebas: `cmd /c npm test`
+4. Para jugar en navegador: Abrir `index.html` con Live Server.
 
 ## Controles
 
-[Describe los controles disponibles o indica que todavia no existen.]
+- **Moverse:** Flechas de dirección (Arriba, Abajo, Izquierda, Derecha) o teclas WASD.
 
 ## Creditos
 
-[Declara assets, sonidos, tipografias, plugins, codigo, referencias y licencias de terceros.]
+- Motor gráfico: Phaser 3
+- Framework de tests: Jest
 
 ## Entrega o demostracion
 
