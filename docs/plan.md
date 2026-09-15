@@ -1,19 +1,23 @@
-# Plan de intervencion
+# Plan de intervención
 
 ## Objetivo del plan
 
-[Explica como el plan satisface los criterios de aceptacion sin ampliar el alcance.]
+Conectar la clase `GameLogic` con la escena de Phaser 3 y asegurar el correcto funcionamiento en entorno dual (Node.js/Navegador).
 
 ## Cambios propuestos
 
-| Paso | Cambio minimo | Archivos previstos | Verificacion | Riesgo | Condicion de detencion |
+| Paso | Cambio mínimo | Archivos previstos | Verificación | Riesgo | Condición de detención |
 |---:|---|---|---|---|---|
-| 1 | [PENDIENTE] | [PENDIENTE] | [Prueba o paso] | [PENDIENTE] | [Cuando consultar] |
+| 1 | Exportación híbrida de GameLogic | `src/GameLogic.js` | `npm test` en verde | Incompatibilidad con Jest | Error de módulo |
+| 2 | Configurar escena e interfaz Phaser | `src/index.js` | Visualización en Live Server | Referencia a GameLogic no encontrada | Error en consola |
+| 3 | Agregar html en raíz | `index.html` | Carga de scripts en orden | Fallo de ruta | Script no encontrado |
 
-## Orden de implementacion
+## Orden de implementación
 
-[Justifica el orden y que debe comprobarse antes de avanzar al paso siguiente.]
+1. Ajustar exportaciones en `GameLogic.js`.
+2. Crear instancia y dibujo de grilla en `index.js`.
+3. Validar con pruebas y renderizado visual.
 
 ## Fuera de alcance
 
-- [Cambio que se pospone o se rechaza.]
+- Modificaciones no autorizadas sobre `GDD.md`.

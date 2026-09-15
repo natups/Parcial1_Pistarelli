@@ -1,27 +1,30 @@
-# Auditoria del repositorio
+# Auditoría del repositorio
 
 ## Objetivo
 
-Registrar hechos verificables sobre la estructura, arquitectura y validacion del proyecto antes de proponer cambios.
+Registrar hechos verificables sobre la estructura, arquitectura y validación del proyecto.
 
-## Rutas y simbolos relevantes
+## Rutas y símbolos relevantes
 
-| Ruta o simbolo | Rol observado | Evidencia |
+| Ruta o símbolo | Rol observado | Evidencia |
 |---|---|---|
-| [PENDIENTE] | [PENDIENTE] | [Archivo, prueba o comando] |
+| `src/GameLogic.js` | Lógica pura del juego | Jest Unit Tests (`7/7 PASS`) |
+| `src/index.js` | Interfaz y renderizado | Phaser 3 (`Phaser.Game`) |
+| `index.html` | Entry point para el navegador | Renderizado en Live Server |
+| `tests/GameLogic.test.js` | Suite de pruebas unitarias | Cobertura total de requisitos |
 
 ## Flujo observado
 
-[Describe como ingresa una accion o percepcion, que capas atraviesa y donde se produce el comportamiento observable.]
+La acción del jugador ingresa vía evento de teclado en `index.js`, invoca `gameLogic.move(direccion)`, y luego actualiza la posición gráfica y la interfaz en pantalla.
 
 ## Pruebas y comandos disponibles
 
-| Comando o prueba | Que verifica | Resultado inicial |
+| Comando o prueba | Qué verifica | Resultado inicial |
 |---|---|---|
-| [PENDIENTE] | [PENDIENTE] | [PENDIENTE] |
+| `cmd /c npm test` | Ejecución de suite Jest | 7/7 pasados con éxito |
 
 ## Hechos, supuestos y preguntas abiertas
 
-- Hechos comprobados: [PENDIENTE]
-- Supuestos por verificar: [PENDIENTE]
-- Preguntas para consultar: [PENDIENTE]
+- Hechos comprobados: La lógica funciona de forma independiente del motor y cumple todos los tests unitarios.
+- Supuestos por verificar: Ninguno.
+- Preguntas para consultar: Ninguna.
