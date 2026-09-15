@@ -1,0 +1,28 @@
+{
+  "name": "parcial1_pistarelli",
+  "version": "1.0.0",
+  "description": "Esta plantilla prepara un repositorio publico e individual para proyectos academicos de videojuegos. Es independiente del motor, lenguaje y tipo de juego.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/natups/Parcial1_Pistarelli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/natups/Parcial1_Pistarelli/issues"
+  },
+  "homepage": "https://github.com/natups/Parcial1_Pistarelli#readme",
+  "devDependencies": {
+    "jest": "^30.5.1",
+    "phaser": "^4.2.1"
+  }
+}

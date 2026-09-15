@@ -1,18 +1,23 @@
-# Matriz de permisos
+# Matriz de Permisos
 
-Completa esta matriz antes de habilitar acciones de un agente. Una accion no declarada debe considerarse prohibida hasta consultar.
+## Contexto
+- **Tarea:** Desarrollo de la lógica y la interfaz del juego Laberinto Recolector.
+- **Entorno aislado:** Repositorio local `Parcial1_Pistarelli`.
+- **Responsable humano:** Estudiante.
 
-| Accion | Estado | Alcance o justificacion |
-|---|---|---|
-| Leer archivos del proyecto | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Buscar rutas y simbolos | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Editar archivos previstos | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Ejecutar scripts documentados | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Instalar dependencias | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Usar red | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Publicar o subir cambios | [Permitida/Pendiente/Prohibida] | [PENDIENTE] |
-| Acceder a secretos o credenciales | Prohibida | No corresponde al trabajo. |
+| Acción | Alcance | Decisión | Condición o motivo |
+| :--- | :--- | :--- | :--- |
+| **Leer archivos** | Todo el repositorio | permitir | Necesario para analizar el proyecto |
+| **Buscar contenido** | Todo el repositorio | permitir | Necesario para ubicar funciones y rutas |
+| **Editar** | `src/*`, `tests/*` | permitir | Una vez aprobados el GDD y la especificación |
+| **Editar** | `GDD.md`, `docs/*` | preguntar | Requiere validación humana previa |
+| **Ejecutar pruebas** | `npm test` | permitir | Para validar criterios de aceptación |
+| **Instalar dependencias**| `package.json` | preguntar | Solo se permiten paquetes declarados |
+| **Acceder a red** | Red externa | denegar | Desarrollo 100% local |
+| **Leer secretos** | Ninguno | denegar | No existen ni se requieren credenciales |
+| **Eliminar archivos** | Todo el repositorio | preguntar | Evitar pérdida accidental de evidencia |
+| **Commit** | Git local | preguntar | Confirmar hitos de desarrollo |
 
-## Condiciones de detencion
-
-- [Situacion que obliga a detener la herramienta y consultar.]
+## Recuperación
+- **Copia o control de versión disponible:** Sí, Git en repositorio local.
+- **Procedimiento ante una acción inesperada:** Revertir los cambios no deseados mediante `git checkout` o `git reset`.
