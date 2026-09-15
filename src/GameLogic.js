@@ -86,6 +86,10 @@ class GameLogic {
   }
 }
 
+// Exportación híbrida (Node.js/Jest + Navegador)
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = GameLogic;
+}
+if (typeof window !== 'undefined') {
+  window.GameLogic = GameLogic;
 }
